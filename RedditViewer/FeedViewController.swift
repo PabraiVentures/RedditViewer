@@ -34,22 +34,6 @@ class FeedViewController: UIViewController {
         button.setTitleColor(.white, for: .normal)
         button.titleLabel?.textAlignment = .center
         button.setTitle(subreddit.displayString, for: .normal)
-        return button
-    }()
-    
-    override func viewDidLoad() {
-        super.viewDidLoad()
-        setupViews()
-        setupTableView()
-        subscribeToViewModel()
-        
-    }
-    
-    private func setupViews() {
-        view.backgroundColor = .black
-        view.addSubviewWithEqualEdgeConstraints(tableView)
-        view.addSubviewWithEqualEdgeConstraints(activityIndicator)
-        view.addSubviewIgnoringAutoresizingMask(subredditButton)
         let memesAction = UIAction(title: Subreddit.memes.displayString, handler: { _ in
             self.showMemes()
         })
@@ -59,15 +43,31 @@ class FeedViewController: UIViewController {
         })
         
         let menu = UIMenu(title: "Subreddits", children: [memesAction, landscapesAction])
-        subredditButton.menu = menu
-        subredditButton.showsMenuAsPrimaryAction = true
-                                                         
+        button.menu = menu
+        button.showsMenuAsPrimaryAction = true
+                
+        return button
+    }()
+    
+    override func viewDidLoad() {
+        super.viewDidLoad()
+        setupViews()
+        setupTableView()
+        subscribeToViewModel()
+        fetch()
+    }
+    
+    private func setupViews() {
+        view.backgroundColor = .black
+        view.addSubviewWithEqualEdgeConstraints(tableView)
+        view.addSubviewWithEqualEdgeConstraints(activityIndicator)
+        view.addSubviewIgnoringAutoresizingMask(subredditButton)
+                                         
         NSLayoutConstraint.activate([
             subredditButton.topAnchor.constraint(equalTo: view.safeAreaLayoutGuide.topAnchor, constant: -11),
             subredditButton.centerXAnchor.constraint(equalTo: view.centerXAnchor),
         ])
         activityIndicator.startAnimating()
-        fetch()
     }
     
     private func setupTableView() {
