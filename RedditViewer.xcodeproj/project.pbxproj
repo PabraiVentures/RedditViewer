@@ -9,13 +9,19 @@
 /* Begin PBXBuildFile section */
 		ECC7390529346724008A86AE /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = ECC7390429346724008A86AE /* AppDelegate.swift */; };
 		ECC7390729346724008A86AE /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = ECC7390629346724008A86AE /* SceneDelegate.swift */; };
-		ECC7390929346724008A86AE /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = ECC7390829346724008A86AE /* ViewController.swift */; };
+		ECC7390929346724008A86AE /* FeedViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = ECC7390829346724008A86AE /* FeedViewController.swift */; };
 		ECC7390C29346724008A86AE /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = ECC7390A29346724008A86AE /* Main.storyboard */; };
 		ECC7390E29346725008A86AE /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = ECC7390D29346725008A86AE /* Assets.xcassets */; };
 		ECC7391129346725008A86AE /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = ECC7390F29346725008A86AE /* LaunchScreen.storyboard */; };
 		ECC7391C29346725008A86AE /* RedditViewerTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = ECC7391B29346725008A86AE /* RedditViewerTests.swift */; };
 		ECC7392629346725008A86AE /* RedditViewerUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = ECC7392529346725008A86AE /* RedditViewerUITests.swift */; };
 		ECC7392829346725008A86AE /* RedditViewerUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = ECC7392729346725008A86AE /* RedditViewerUITestsLaunchTests.swift */; };
+		ECC7393529346916008A86AE /* UIView+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = ECC7393429346916008A86AE /* UIView+Extensions.swift */; };
+		ECC7393729346AFF008A86AE /* PostTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = ECC7393629346AFF008A86AE /* PostTableViewCell.swift */; };
+		ECC7393929347641008A86AE /* NetworkFetcher.swift in Sources */ = {isa = PBXBuildFile; fileRef = ECC7393829347641008A86AE /* NetworkFetcher.swift */; };
+		ECC7393B293476C6008A86AE /* Post.swift in Sources */ = {isa = PBXBuildFile; fileRef = ECC7393A293476C6008A86AE /* Post.swift */; };
+		ECC7393D29347C17008A86AE /* PostsViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = ECC7393C29347C17008A86AE /* PostsViewModel.swift */; };
+		ECC73940293498C3008A86AE /* Kingfisher in Frameworks */ = {isa = PBXBuildFile; productRef = ECC7393F293498C3008A86AE /* Kingfisher */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -39,7 +45,7 @@
 		ECC7390129346724008A86AE /* RedditViewer.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = RedditViewer.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		ECC7390429346724008A86AE /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		ECC7390629346724008A86AE /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
-		ECC7390829346724008A86AE /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		ECC7390829346724008A86AE /* FeedViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FeedViewController.swift; sourceTree = "<group>"; };
 		ECC7390B29346724008A86AE /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		ECC7390D29346725008A86AE /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		ECC7391029346725008A86AE /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
@@ -49,6 +55,11 @@
 		ECC7392129346725008A86AE /* RedditViewerUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = RedditViewerUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		ECC7392529346725008A86AE /* RedditViewerUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RedditViewerUITests.swift; sourceTree = "<group>"; };
 		ECC7392729346725008A86AE /* RedditViewerUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RedditViewerUITestsLaunchTests.swift; sourceTree = "<group>"; };
+		ECC7393429346916008A86AE /* UIView+Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIView+Extensions.swift"; sourceTree = "<group>"; };
+		ECC7393629346AFF008A86AE /* PostTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PostTableViewCell.swift; sourceTree = "<group>"; };
+		ECC7393829347641008A86AE /* NetworkFetcher.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkFetcher.swift; sourceTree = "<group>"; };
+		ECC7393A293476C6008A86AE /* Post.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Post.swift; sourceTree = "<group>"; };
+		ECC7393C29347C17008A86AE /* PostsViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PostsViewModel.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -56,6 +67,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				ECC73940293498C3008A86AE /* Kingfisher in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -101,11 +113,16 @@
 			children = (
 				ECC7390429346724008A86AE /* AppDelegate.swift */,
 				ECC7390629346724008A86AE /* SceneDelegate.swift */,
-				ECC7390829346724008A86AE /* ViewController.swift */,
+				ECC7390829346724008A86AE /* FeedViewController.swift */,
 				ECC7390A29346724008A86AE /* Main.storyboard */,
 				ECC7390D29346725008A86AE /* Assets.xcassets */,
 				ECC7390F29346725008A86AE /* LaunchScreen.storyboard */,
 				ECC7391229346725008A86AE /* Info.plist */,
+				ECC7393429346916008A86AE /* UIView+Extensions.swift */,
+				ECC7393629346AFF008A86AE /* PostTableViewCell.swift */,
+				ECC7393829347641008A86AE /* NetworkFetcher.swift */,
+				ECC7393A293476C6008A86AE /* Post.swift */,
+				ECC7393C29347C17008A86AE /* PostsViewModel.swift */,
 			);
 			path = RedditViewer;
 			sourceTree = "<group>";
@@ -143,6 +160,9 @@
 			dependencies = (
 			);
 			name = RedditViewer;
+			packageProductDependencies = (
+				ECC7393F293498C3008A86AE /* Kingfisher */,
+			);
 			productName = RedditViewer;
 			productReference = ECC7390129346724008A86AE /* RedditViewer.app */;
 			productType = "com.apple.product-type.application";
@@ -215,6 +235,9 @@
 				Base,
 			);
 			mainGroup = ECC738F829346724008A86AE;
+			packageReferences = (
+				ECC7393E293498C3008A86AE /* XCRemoteSwiftPackageReference "Kingfisher" */,
+			);
 			productRefGroup = ECC7390229346724008A86AE /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
@@ -258,8 +281,13 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				ECC7390929346724008A86AE /* ViewController.swift in Sources */,
+				ECC7390929346724008A86AE /* FeedViewController.swift in Sources */,
 				ECC7390529346724008A86AE /* AppDelegate.swift in Sources */,
+				ECC7393729346AFF008A86AE /* PostTableViewCell.swift in Sources */,
+				ECC7393529346916008A86AE /* UIView+Extensions.swift in Sources */,
+				ECC7393D29347C17008A86AE /* PostsViewModel.swift in Sources */,
+				ECC7393929347641008A86AE /* NetworkFetcher.swift in Sources */,
+				ECC7393B293476C6008A86AE /* Post.swift in Sources */,
 				ECC7390729346724008A86AE /* SceneDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -443,6 +471,8 @@
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
 				INFOPLIST_KEY_UIMainStoryboardFile = Main;
+				INFOPLIST_KEY_UIRequiresFullScreen = NO;
+				INFOPLIST_KEY_UIStatusBarStyle = "";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				LD_RUNPATH_SEARCH_PATHS = (
@@ -471,6 +501,8 @@
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
 				INFOPLIST_KEY_UIMainStoryboardFile = Main;
+				INFOPLIST_KEY_UIRequiresFullScreen = NO;
+				INFOPLIST_KEY_UIStatusBarStyle = "";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				LD_RUNPATH_SEARCH_PATHS = (
@@ -602,6 +634,25 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		ECC7393E293498C3008A86AE /* XCRemoteSwiftPackageReference "Kingfisher" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/onevcat/Kingfisher";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 7.0.0;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		ECC7393F293498C3008A86AE /* Kingfisher */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = ECC7393E293498C3008A86AE /* XCRemoteSwiftPackageReference "Kingfisher" */;
+			productName = Kingfisher;
+		};
+/* End XCSwiftPackageProductDependency section */
 	};
 	rootObject = ECC738F929346724008A86AE /* Project object */;
 }
